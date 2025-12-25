@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f820dbb5aa.js" crossorigin="anonymous"></script>
+    <title>Mercado Livre</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: none;
+        }
+        body{
+            background-color: rgb(202, 202, 202);
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: yellow;
+            padding: 6px;
+            justify-content: center;
+        }
+        .sup, nav{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        nav{
+            gap: 100px;
+        }
+        ul{
+            display: flex;
+            gap: 25px;
+        }
+        li{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 15px;
+        }
+        input{
+            width: 500px;
+            height: 40px;
+            border: 2px solid rgb(202, 202, 202) ;
+            border-radius: 1%;
+            color: rgb(202, 202, 202);
+            font: bold;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        .cards{
+            display: flex;
+            gap: 20px;
+            
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 20px;
+            background-color: white;
+            width: 300px;
+            border-radius: 2%;
+        }
+        header i{
+            font-size: 20px;
+        }
+        figure p{
+            display: flex;
+            text-align: center;
+        }
+        figure h3{
+            font-size: 15px;
+        }
+        figure i{
+            font-size: 50px;
+            color: rgba(255, 255, 0, 0.596);
+        }
+        button{
+            background-color: rgb(131, 226, 255);
+            color: rgb(0, 0, 145);
+            font: bold;
+            border: none;
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 2%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <!-- ======= PESQUISA ======= -->
+        <div class="sup">
+            <h2>Mercado<br> Livre</h2>
+            <input type="text" placeholder="Buscar produtos, marcas e muito mais...">
+            <img src="https://http2.mlstatic.com/D_NQ_668215-MLA100698369940_122025-OO.webp" alt="foto de desconto" title="desconto" width="25%">
+        </div>
+        <!-- ======= NAV ======= -->
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Informe seu<br>CEP</p>
+                </li>
+            </ul>
+            <ul>
+                <li>Categorias</li>
+                <li>Ofertas</li>
+                <li>Cupons</li>
+                <li>Supermercado</li>
+            </ul>
+            <ul>
+                <li>Crie a sua conta</li>
+                <li>Entre</li>
+                <li>Compras</li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="https://http2.mlstatic.com/D_NQ_813913-MLA101197155563_122025-OO.webp" alt="produto do mercado livre" title="geladeira eletrolux" width="100%">
+   
+        <section class="cards">
+            <figure>
+                <h3>Frete grátis</h3>
+                <i class="fa-solid fa-box"></i>
+                <p>Beneficios por ser a primeira compra</p>
+                <button>Mostrar produtos</button>
+            </figure>
+            <figure>
+                <h3>Entre na sua conta</h3>
+                <i class="fa-solid fa-user"></i>
+                <p>Aproveite as ofertas para comprar tudo que quiser</p>
+                <button>Entrar na sua conta</button>
+            </figure>
+            <figure>
+                <h3>Insira sua localização</h3>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Confira os custos e prazo de ofertas</p>
+                <button>Informar localização</button>
+            </figure>
+            <figure>
+                <h3>Meios de pagamento</h3>
+                <i class="fa-solid fa-credit-card"></i>
+                <p>Pague suas compras com rapidez e segurança</p>
+                <button>Mostrar meios</button>
+            </figure>
+            <figure>
+                <h3>Menos de R$100</h3>
+                <i class="fa-solid fa-money-bill-1"></i>
+                <p>Confira os produtos com preços abaixo</p>
+                <button>Mostrar produtos</button>
+            </figure>
+            <figure>
+                <h3>Mais vendidos</h3>
+                <i class="fa-solid fa-star"></i>
+                <p>Explore produtos com tendencia</p>
+                <button>Ir para mais vendidos</button>
+            </figure>
+
+
+
+        </section>
+
+    </main>
+</body>
+</html>
